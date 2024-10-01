@@ -14,7 +14,8 @@
         repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
         repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
         linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
-}
+        --text-stroke: #fff;
+    }
 
 :root.theme-dark {
     --main-font-heading: 785;
@@ -25,7 +26,8 @@
         repeating-linear-gradient(90deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
         repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
         linear-gradient(to bottom, #007f0c 0%, #004306 100%);
-}
+    --text-stroke: #000;
+    }
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -37,5 +39,7 @@
             repeating-linear-gradient(90deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
             repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
             linear-gradient(to bottom, #007f0c 0%, #004306 100%);
+        --text-stroke: #000;
      }
  }
+ 

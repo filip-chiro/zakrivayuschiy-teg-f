@@ -13,7 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -25,6 +24,7 @@
   background-size: cover;
 }
 
+/*HEADER*/
 .header {
   margin: 100px auto;
   padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem) 21px clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
@@ -91,12 +91,46 @@
   inline-size: 16px;
   block-size: 13px;
   opacity: 0.6;
+  animation: chosen_theme 0.5s ease-in-out infinite alternate;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .theme-menu__button:disabled {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
   pointer-events: none;
 }
 
+.theme-menu__button::after {
+  content: "";
+  position: absolute;
+  inline-size: 100%;
+  block-size: 2px;
+  inset-inline-start: 0;
+  inset-block-end: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.theme-menu__button:focus-visible:after {
+  transform: scaleX(1);
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+/* MAIN */
 .content {
   display: flex;
   flex-direction: column;
@@ -133,6 +167,22 @@
 
 .card__image-label {
   position: absolute;
+  margin-block-start: 27px;
+  inset-inline-end: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
+  mix-blend-mode: hard-light;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 var(--text-stroke);
+  opacity: 0.5;
+}
+
+@supports((text-stroke: 1px var(--text-stroke)) or (-webkit-text-stroke: 1px var(--text-stroke))) {
+  .card__image-label {
+    text-stroke: 1px var(--text-stroke);
+    -webkit-text-stroke: 1px var(--text-stroke);
+    text-shadow: none;
+  }
 }
 
 .card__content-paragraph {
@@ -167,6 +217,7 @@
   font-size: 14px;
 }
 
+/* FOOTER */
 .footer {
   margin: 50px 0 100px;
 }
