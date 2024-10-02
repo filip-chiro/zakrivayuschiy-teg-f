@@ -21,3 +21,32 @@
         inset-inline-start: -11px;
     }
 }
+
+.sparks {
+    opacity: 0;
+  }
+
+.like-icon:hover {
+    cursor: pointer;
+}
+
+.like-icon:hover .core {
+    fill: var(--contour-color);
+    transition: fill 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+    fill: var(--contour-color);
+    transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon .core {
+    fill: var(--background-color);
+    transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon .main-body {
+    fill: var(--background-color);
+    transition: fill 0.3s linear;
+}
+

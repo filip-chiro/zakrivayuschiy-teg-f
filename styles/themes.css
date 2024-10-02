@@ -14,7 +14,11 @@
         repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
         repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
         linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
-        --text-stroke: #fff;
+    --text-stroke: #fff;
+    --buttons-mix-color: #fff;
+    --contour-color: #000;
+    --sparks-color: #FF0000;
+    --filling-color: #FF0000;
     }
 
 :root.theme-dark {
@@ -27,6 +31,10 @@
         repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
         linear-gradient(to bottom, #007f0c 0%, #004306 100%);
     --text-stroke: #000;
+    --buttons-mix-color: #00cc14;
+    --contour-color: #00cc14;
+    --sparks-color: #FF0000;
+    --filling-color: #FF0000;
     }
 
 @media (prefers-color-scheme: dark) {
@@ -40,6 +48,9 @@
             repeating-linear-gradient(to bottom, #000 0 2px, rgb(0 0 0 / 0) 2px 4px),
             linear-gradient(to bottom, #007f0c 0%, #004306 100%);
         --text-stroke: #000;
+        --buttons-mix-color: #00cc14;
+        --contour-color: #00cc14;
+        --sparks-color: #FF0000;
+        --filling-color: #FF0000;
      }
  }
- 
