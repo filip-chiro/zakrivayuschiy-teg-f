@@ -64,7 +64,7 @@
         </div>
         <div class="card__buttons">
           <button type="button" class="card__icon-button">
-            <svg class="like-icon is-liked" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path fill="var(--contour-color)" class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 
                 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 
@@ -110,15 +110,17 @@
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog class="dialog__window" id="dialog-id">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 39 39"
-          fill="currentColor"
-          class="floppy-icon"
-        >
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="dialog__text">Вставьте дискету, чтобы продолжить</span>
+        <div class="dialog__content">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 39 39"
+            fill="currentColor"
+            class="floppy-icon"
+          >
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="dialog__text">Вставьте дискету, чтобы продолжить</span>
+        </div>
         <form method="dialog">
           <button type="submit" class="dialog__button button-common">
             <span class="button__text">ок</span>
