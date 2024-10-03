@@ -47,7 +47,7 @@
       </nav>
     </header>
     <main class="content">
-      <article class="card content-width">
+      <article class="card card-plus-margin content-width">
         <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
         <div class="card__image-container">
           <img
@@ -86,12 +86,12 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z"/>
           </svg>
           </button>
-          <button class="button-common card__like-button">
+          <button type="button" class="button-common card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
-      <article class="card content-width">
+      <article class="card card-plus-margin content-width">
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__image-container">
           <img
@@ -130,12 +130,12 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z"/>
           </svg>
           </button>
-          <button class="button-common card__like-button">
+          <button type="button" class="button-common card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
-      <article class="card card-plus-margin content-width">
+      <article class="card content-width">
         <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__image-container">
           <img
@@ -174,7 +174,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z"/>
           </svg>
           </button>
-          <button class="button-common card__like-button">
+          <button type="button" class="button-common card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -218,7 +218,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z"/>
           </svg>
           </button>
-          <button class="button-common card__like-button">
+          <button type="button" class="button-common card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -262,7 +262,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z"/>
           </svg>
           </button>
-          <button class="button-common card__like-button">
+          <button type="button" class="button-common card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -306,7 +306,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z"/>
           </svg>
           </button>
-          <button class="button-common card__like-button">
+          <button type="button" class="button-common card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -350,7 +350,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z"/>
           </svg>
           </button>
-          <button class="button-common card__like-button">
+          <button type="button" class="button-common card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -394,31 +394,18 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z"/>
           </svg>
           </button>
-          <button class="button-common card__like-button">
+          <button type="button" class="button-common card__like-button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
-    </main>
-    <footer class="footer">
-      <button 
-        type="button" 
-        onclick="window['dialog-id'].showModal()" 
-        aria-controls="dialog-id" 
-        class="button-common card__save-button"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 39 39"
-          fill="currentColor"
-          class="floppy-icon"
+      <div class="card__save-button-wrapper">
+        <button 
+          type="button" 
+          onclick="window['dialog-id'].showModal()" 
+          aria-controls="dialog-id" 
+          class="button-common card__save-button"
         >
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-      <dialog class="dialog__window" id="dialog-id">
-        <div class="dialog__content">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 39 39"
@@ -427,15 +414,28 @@
           >
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
-          <span class="dialog__text">Вставьте дискету, чтобы продолжить</span>
-        </div>
-        <form method="dialog">
-          <button type="submit" class="dialog__button button-common">
-            <span class="button__text">ок</span>
-          </button>
-        </form>
-      </dialog>
-    </footer>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+        <dialog class="dialog__window" id="dialog-id">
+          <div class="dialog__content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 39 39"
+              fill="currentColor"
+              class="floppy-icon"
+            >
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <span class="dialog__text">Вставьте дискету, чтобы продолжить</span>
+          </div>
+          <form method="dialog">
+            <button type="submit" class="dialog__button button-common">
+              <span class="button__text">ок</span>
+            </button>
+          </form>
+        </dialog>
+      </div>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
