@@ -158,7 +158,7 @@
   .card:nth-child(7) {
     .card__content-paragraph {
       padding: 0px 28px 25px 27px;
-    } 
+    }
   }
 } 
 
@@ -239,7 +239,7 @@
 
 .card:nth-child(2) {
   .card__content-paragraph {
-    padding: 0px 24px 25px 25px; 
+    padding: 0px 24px 25px 25px;
   }
 }
 
@@ -255,7 +255,7 @@
 
 .card__icon-button {
   display: flex;
-  align-items: center; 
+  align-items: center;
   border: 2px solid transparent;
   background-color: transparent;
   padding: 0;
